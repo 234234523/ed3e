@@ -1,0 +1,211 @@
+/* =========================================================
+ *  ICE GLASS — BASE
+ *  Structural foundation. Must load BEFORE the theme's :root
+ *  tokens and style rules. Paste at top of theme file, or
+ *  @import it first if you split into separate files.
+ * ========================================================= */
+
+/* --- 1. TRANSPARENCY CHAIN ---------------------------------
+ * Every wrapper between <html> and the glass panes must be
+ * transparent, or the wallpaper never reaches the surface. */
+html,
+body,
+#app-mount,
+[class*="appMount_"],
+[class*="appDevToolsWrapper_"],
+[class*="app_"],
+[class*="layers_"],
+[class*="layer_"],
+[class*="base_"] {
+  background: transparent !important;
+}
+
+/* --- 2. FULL DISCORD NATIVE TOKEN BRIDGE --------------------
+ * Discord's own components (toasts, notifications, activity
+ * cards, the music widget, native right-click menus, modals
+ * you didn't target) all read these tokens. Set them or they
+ * fall back to Discord's opaque defaults. */
+.theme-light, .theme-dark, .theme-darker, .theme-midnight {
+  /* Fonts */
+  --font-primary: var(--ig-font);
+  --font-display: var(--ig-font);
+  --font-code: var(--ig-font-mono);
+
+  /* Backgrounds */
+  --background-primary: transparent;
+  --background-primary-alt: transparent;
+  --background-secondary: var(--ig-panel);
+  --background-secondary-alt: var(--ig-panel);
+  --background-tertiary: var(--ig-panel);
+  --background-accent: var(--ig-panel-active);
+  --background-floating: var(--ig-panel-solid);
+  --background-nested-floating: var(--ig-panel-solid);
+  --background-mobile-primary: transparent;
+  --background-mobile-secondary: var(--ig-panel);
+
+  /* Modifiers */
+  --background-modifier-hover: hsl(var(--ig-hue) 100% 96% / 0.55);
+  --background-modifier-active: var(--ig-panel-hover);
+  --background-modifier-selected: var(--ig-panel-active);
+  --background-modifier-accent: var(--ig-border);
+  --background-modifier-border: var(--ig-border);
+  --background-modifier-error: hsl(0 80% 55% / 0.15);
+  --background-modifier-success: hsl(140 60% 45% / 0.15);
+  --background-mentioned: hsl(var(--ig-hue) 85% 55% / 0.12);
+  --background-mentioned-hover: hsl(var(--ig-hue) 85% 55% / 0.20);
+
+  /* Headers */
+  --header-primary: var(--ig-text);
+  --header-secondary: var(--ig-text-muted);
+  --header-tertiary: var(--ig-text-faint);
+
+  /* Text */
+  --text-normal: var(--ig-text);
+  --text-muted: var(--ig-text-muted);
+  --text-link: var(--ig-accent);
+  --text-link-low-saturation: var(--ig-accent-hover);
+  --text-positive: hsl(140 60% 40%);
+  --text-warning: hsl(35 90% 45%);
+  --text-danger: hsl(0 75% 50%);
+  --text-brand: var(--ig-accent);
+  --text-default: var(--ig-text);
+
+  /* Interactive */
+  --interactive-normal: var(--ig-text);
+  --interactive-hover: var(--ig-text);
+  --interactive-active: var(--ig-accent);
+  --interactive-muted: var(--ig-text-faint);
+
+  /* Channels */
+  --channels-default: var(--ig-text-muted);
+  --channel-icon: var(--ig-text-muted);
+  --channel-text-area-placeholder: var(--ig-text-faint);
+  --channeltextarea-background: hsl(var(--ig-hue) 100% 98% / 0.75);
+
+  /* Brand */
+  --brand-experiment: var(--ig-accent);
+  --brand-experiment-560: var(--ig-accent-hover);
+  --brand-experiment-600: var(--ig-accent-press);
+  --brand-500: var(--ig-accent);
+  --brand-560: var(--ig-accent-hover);
+  --brand-600: var(--ig-accent-press);
+
+  /* Buttons */
+  --button-primary-background: var(--ig-accent);
+  --button-primary-background-hover: var(--ig-accent-hover);
+  --button-primary-background-active: var(--ig-accent-press);
+  --button-primary-text: #fff;
+  --button-secondary-background: var(--ig-panel-hover);
+  --button-secondary-background-hover: var(--ig-panel-active);
+  --button-secondary-background-active: var(--ig-accent-soft);
+  --button-secondary-text: var(--ig-text);
+  --button-danger-background: hsl(0 75% 50%);
+  --button-danger-background-hover: hsl(0 75% 42%);
+  --button-danger-background-active: hsl(0 75% 35%);
+  --button-danger-text: #fff;
+
+  /* Mentions */
+  --mention-foreground: var(--ig-accent);
+  --mention-background: hsl(var(--ig-hue) 85% 55% / 0.15);
+
+  /* Status */
+  --status-green: hsl(140 60% 48%);
+  --status-yellow: hsl(35 90% 55%);
+  --status-red: hsl(0 75% 55%);
+  --status-offline: var(--ig-text-faint);
+  --status-streaming: hsl(270 70% 60%);
+
+  /* Focus ring */
+  --focus-primary: var(--ig-accent);
+
+  /* Elevation shadows */
+  --elevation-low: 0 1px 2px hsl(var(--ig-hue) 40% 30% / 0.12);
+  --elevation-medium: 0 4px 12px hsl(var(--ig-hue) 40% 30% / 0.16);
+  --elevation-high: 0 8px 24px hsl(var(--ig-hue) 40% 30% / 0.22);
+  --elevation-stroke: 0 0 0 1px var(--ig-border);
+
+  /* Scrollbars */
+  --scrollbar-thin-thumb: hsl(var(--ig-hue) 55% 55% / 0.45);
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: hsl(var(--ig-hue) 55% 55% / 0.55);
+  --scrollbar-auto-track: transparent;
+  --scrollbar-auto-scrollbar-color-thumb: hsl(var(--ig-hue) 55% 55% / 0.55);
+  --scrollbar-auto-scrollbar-color-track: transparent;
+
+  /* Window bar (0 = don't reserve space) */
+  --custom-app-top-bar-height: 0px;
+}
+
+/* --- 3. WINDOW DRAG REGION ----------------------------------
+ * If Discord's titlebar is shown (Mica style), make it drag
+ * the window but keep its buttons clickable. */
+[class*="base_"] > [class*="bar_"] {
+  -webkit-app-region: drag;
+}
+[class*="base_"] > [class*="bar_"] button,
+[class*="base_"] > [class*="bar_"] [role="button"],
+[class*="base_"] > [class*="bar_"] a {
+  -webkit-app-region: no-drag;
+}
+
+/* If you hide Discord's bar AND run frameless, uncomment
+ * this 6px drag strip at the top of the window: */
+/*
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+  z-index: 100000;
+  -webkit-app-region: drag;
+  pointer-events: auto;
+}
+*/
+
+/* --- 4. NATIVE FORM CONTROLS -------------------------------- */
+button, input, textarea, select {
+  font-family: inherit;
+  color: var(--ig-text);
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--ig-text-faint) !important;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--ig-accent);
+}
+::selection {
+  background: hsl(var(--ig-hue) 85% 55% / 0.25);
+  color: var(--ig-text);
+}
+*:focus-visible {
+  outline: 2px solid var(--ig-accent);
+  outline-offset: 2px;
+}
+
+/* --- 5. ROOT SCROLLBAR ------------------------------------- */
+* {
+  scrollbar-color: hsl(var(--ig-hue) 55% 55% / 0.55) transparent;
+  scrollbar-width: thin;
+}
+
+/* --- 6. VENCORD / BETTERDISCORD PANELS --------------------- */
+#vencord-settings,
+#bd-settingspane-container,
+[class*="bd-"],
+[class*="vc-"] {
+  background: var(--ig-panel-solid) !important;
+  backdrop-filter: blur(var(--ig-blur)) saturate(var(--ig-saturate));
+  -webkit-backdrop-filter: blur(var(--ig-blur)) saturate(var(--ig-saturate));
+}
+
+/* --- 7. STRUCTURAL TRANSPARENCY ---------------------------- */
+[class*="sidebarRegion_"],
+[class*="chat_"] > [class*="content_"],
+[class*="threadSidebar_"],
+[class*="recentMentionsPopout_"],
+[class*="messagesPopoutWrap_"],
+[class*="guildPopout_"] {
+  background: transparent !important;
+}
