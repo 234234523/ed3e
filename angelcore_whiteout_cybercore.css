@@ -1,0 +1,344 @@
+@import url("https://marda33.github.io/SkeuoCord/updates/SkeuoCordBase.css");
+
+:root {
+	--maintransp_dark_top: 12,13,14; /*default: 12,13,14*/
+	--maintransp_dark_bottom: 41,43,46; /*default: 41,43,46*/
+	--maintransp_light_top: 215,214,211; /*default: */
+	--maintransp_light_bottom: 230,229,227; /*default: 230,229,227*/
+	--chattransp_dark_top: 54,57,63; /*default: 54,57,63*/
+	--chattransp_dark_bottom: 41,43,46; /*default: 41,43,46*/
+	--chattransp_light_top: 227,226,225; /*default:  227,226,225*/
+	--chattransp_light_bottom: 201,198,192; /*default: 201,198,192*/
+	--listtransp_dark_top: 26,26,28; /*default: 26,26,28*/
+	--listtransp_dark_bottom: 46,48,54; /*default: 46,48,54*/
+	--listtransp_light_top: 183,182,178; /*default: 183,182,178*/
+	--listtransp_light_bottom: 218,216,211; /*default: 218,216,211*/
+	--sidebartransp_dark_top: 43,45,50; /*default: 43,45,50*/
+	--sidebartransp_dark_bottom: 24,25,26; /*default: 24,25,26*/
+	--sidebartransp_light_top: 228,226,221; /*default: 228,226,221*/
+	--sidebartransp_light_bottom: 199,199,194; /*default: 199,199,194*/
+}
+
+.theme-dark .layer_Fd0FEH, .theme-light .layer_Fd0FEH {
+	background: var(--bg-image) !important;
+}
+.theme-light .container_pog62O, .theme-light .wrapper_5dqHTG, .theme-light .scroller_ff90b2, .theme-light .contentRegionScroller_jnk11m, .theme-light .customScroller_jnk11m, .theme-light .scroller_a39aa3, .theme-light .content_z_gUBg [data-list-id="message-requests-list"], .theme-light .scroller_5dqHTG, .container_pog62O, .theme-dark .wrapper_5dqHTG, .scroller_ff90b2, .contentRegionScroller_jnk11m, .theme-dark .customScroller_jnk11m, .theme-dark .scroller_a39aa3, .content_z_gUBg [data-list-id="message-requests-list"], .scroller_5dqHTG, .wrapper_5dqHTG.guilds_pog62O.theme-dark .scroller_5dqHTG, .bg_Fd0FEH.theme-dark .layers_Fd0FEH.layers_QbT-Jy .layer_Fd0FEH.baseLayer_Fd0FEH .container_pog62O .base_pog62O .content_pog62O, .container_pog62O, .privateChannels_u88IQl, .contentRegion_jnk11m, .wrapper_5dqHTG, .sidebar_pog62O, .chat_z_gUBg:not(.scrollerContainer_c6b11b):not(.container_c2efea):not(.chat_z_gUBg.background_MG-lb3), .theme-light .chat_z_gUBg:not(.scrollerContainer_c6b11b):not(.container_c2efea):not(.chat_z_gUBg.background_MG-lb3), .container_zrUwGA, .standardSidebarView_jnk11m, .membersWrap_86es0b, .container_xTP3zy, .chat_z_gUBg, .tabBody_zrUwGA, .applicationStore_6U3jXZ, .scroller_c880e8{
+	background: transparent !important;
+}
+
+.theme-light .tree_5dqHTG, .theme-light .contentRegionScroller_jnk11m, .theme-light .homeContainer_MG-lb3, .theme-light .repoScroller_9JnAPs, .theme-light .scrollerContainer_c6b11b, .theme-light .container_c2efea, .theme-light .chat_z_gUBg.background_MG-lb3, .theme-light .container_BkGrJJ, .theme-light .content_L3EMza, .theme-light .shop_Mqg79R, .theme-light .homeWrapper_8iSxT3, .theme-light .shopScroll__08415, .theme-light .scroller_nNq2Vb, .theme-light .containerSidenav_XtY2mm, .theme-light .scroller_jkJlMe, .theme-light .powerupsContainer_rhYbEd {
+	background: linear-gradient(to top, transparent 30%, rgba(var(--maintransp_light_top), 0.54) 100%) !important;
+	background-color: rgba(var(--maintransp_light_bottom), 0.54) !important;
+	/*main background - light mode*/
+}
+.tree_5dqHTG, .theme-light .wrapper_5dqHTG.guilds_pog62O.theme-dark .tree_5dqHTG, .contentRegionScroller_jnk11m, .homeContainer_MG-lb3, .repoScroller_9JnAPs, .scrollerContainer_c6b11b, .container_c2efea, .chat_z_gUBg.backgroundI__7449f, .container_BkGrJJ, .content_L3EMza, .shop_Mqg79R, .homeWrapper_8iSxT3, .shopScroll__08415, .scroller_nNq2Vb, .containerSidenav_XtY2mm, .scroller_jkJlMe, .powerupsContainer_rhYbEd {
+	background: linear-gradient(to top, transparent 30%, rgba(var(--maintransp_dark_top), 0.63) 100%) !important;
+	background-color: rgba(var(--maintransp_dark_bottom), 0.63) !important;
+	/*main background*/
+}
+
+.theme-light .peopleColumn_zrUwGA, .theme-light .scroller__244e5, .theme-light .scroller__244e5, .theme-light .scroller_pHGfKY, .theme-light .pageBody_fTKmdS {
+	background: linear-gradient(to top, transparent 13%, rgba(var(--listtransp_light_top), 0.8) 100%) !important;
+	background-color: rgba(var(--listtransp_light_bottom), 90.0%, 0.8) !important;
+	/*DM list background - light mode*/
+}
+.theme-dark .peopleColumn_zrUwGA, .theme-dark .scroller__244e5, .theme-dark .scroller__244e5, .theme-dark .scroller_pHGfKY, .theme-dark .pageBody_fTKmdS {
+	background: linear-gradient(to top, transparent 35%, rgba(var(--listtransp_dark_top), 0.9) 100%) !important;
+	background-color: rgba(var(--listtransp_dark_bottom), 0.9) !important;
+	/*DM list background*/
+}
+
+.theme-light .chatContent_z_gUBg {
+	background: linear-gradient(to top, transparent 35%, rgba(var(--chattransp_light_top), 0.84) 100%) !important;
+	background-color: rgba(var(--chattransp_light_bottom), 0.84) !important;
+	/*chat background - light mode*/
+}
+.theme-dark .chatContent_z_gUBg {
+	background: linear-gradient(to top, transparent 35%, rgba(var(--chattransp_dark_top), 0.9) 100%) !important;
+	background-color: rgba(var(--chattransp_dark_bottom), 0.9) !important;
+}
+
+.theme-dark .container_H5ozaj, .sidebar_pog62O.theme-dark .container_H5ozaj, .theme-dark .container__33507, .scroller_Bce46W, .sidebar_pog62O.theme-dark .scroller_Bce46W {
+	background: linear-gradient(to top, transparent 40%, rgba(var(--listtransp_dark_top), 0.9) 100%) !important;
+	background-color: rgba(var(--listtransp_dark_bottom), 0.9) !important;
+	/*channel column BG - friends tab DM list BG*/
+}
+.theme-light .container_H5ozaj, .theme-light .scroller_Bce46W {
+	background: linear-gradient(to top, transparent 40%, rgba(var(--listtransp_light_top), 0.8) 100%) !important;
+	background-color: rgba(var(--listtransp_light_bottom), 0.8) !important;
+	/*channel column BG - friends tab DM list BG, light mode*/
+}
+
+.theme-dark .sidebarRegionScroller_jnk11m, .sidebarRegion_jnk11m.theme-dark .sidebarRegionScroller_jnk11m, .theme-dark .repoHeader_2KfNvH, .header_tLZg6c, .titleContainer_7NrAL2 {
+	background: linear-gradient(to top, transparent 0%, rgba(var(--sidebartransp_dark_top), 0.8) 100%) !important;
+	background-color: rgba(var(--sidebartransp_dark_bottom), 0.8) !important;
+	/*settings sidebar BG*/
+}
+.theme-light .sidebarRegionScroller_jnk11m, .theme-light .repoHeader_2KfNvH, .theme-light .header_tLZg6c, .theme-light .titleContainer_7NrAL2 {
+	background: linear-gradient(to top, transparent 0%, rgba(var(--sidebartransp_light_top), 0.75) 100%) !important;
+	background-color: rgba(var(--sidebartransp_light_bottom), 0.75) !important;
+	/*settings sidebar BG - light mode*/
+}
+
+.container_86es0b, .membersWrap_86es0b:not(.container_86es0b .membersWrap_86es0b) {
+	background: linear-gradient(270deg, transparent 72%, rgba(var(--listtransp_dark_top), 0.8) 100%) !important;
+	background-color: rgba(var(--listtransp_dark_bottom), 0.83) !important;
+	border-left: 1px solid rgb(92,92,92);
+	/*member column BG*/
+}
+.theme-dark .nowPlayingColumn_zrUwGA, .container_FrbQJp .chat_UU236g, .container_FrbQJp .chat_f8LWmr, .container_FrbQJp .chat_S4eA6_ {
+	background: linear-gradient(270deg, transparent 80%, rgba(var(--listtransp_dark_top), 0.8) 100%) !important;
+	background-color: rgba(var(--listtransp_dark_bottom), 0.83) !important;
+	border-left: 1px solid rgb(92,92,92);
+	/*DM list now playing column BG*/
+}
+.theme-light .container_86es0b, .theme-light .membersWrap_86es0b:not(.container_86es0b .membersWrap_86es0b) {
+	background: linear-gradient(270deg, transparent 72%, rgba(var(--listtransp_light_top), 0.7) 100%) !important;
+	background-color: rgba(var(--listtransp_light_bottom), 0.74) !important;
+	border-left: 1px solid rgb(60,60,60);
+	/*member column BG - light mode*/
+}
+.theme-light .nowPlayingColumn_zrUwGA, .theme-light .container_FrbQJp .chat_UU236g, .theme-light .container_FrbQJp .chat_f8LWmr, .theme-light .container_FrbQJp .chat_S4eA6_ {
+	background: linear-gradient(270deg, transparent 80%, rgba(var(--listtransp_light_top), 0.7) 100%) !important;
+	background-color: rgba(var(--listtransp_light_bottom), 0.74) !important;
+	border-left: 1px solid rgb(60,60,60);
+	/*DM list now playing column BG  - light mode*/
+}
+
+/* ============================================================
+   ANGELCORE / WHITEOUT CYBERCORE
+   Porcelain white, chrome silver, and restrained metallic blue.
+   Appended overrides preserve the original SkeuoCord layout.
+   ============================================================ */
+
+:root,
+.theme-light,
+.theme-dark {
+    color-scheme: light !important;
+
+    /* Main surfaces: near-blinding white */
+    --maintransp_dark_top: 255,255,255;
+    --maintransp_dark_bottom: 250,253,255;
+    --maintransp_light_top: 255,255,255;
+    --maintransp_light_bottom: 250,253,255;
+
+    /* Chat surface */
+    --chattransp_dark_top: 255,255,255;
+    --chattransp_dark_bottom: 248,252,255;
+    --chattransp_light_top: 255,255,255;
+    --chattransp_light_bottom: 248,252,255;
+
+    /* Lists and channel rails */
+    --listtransp_dark_top: 246,250,255;
+    --listtransp_dark_bottom: 255,255,255;
+    --listtransp_light_top: 246,250,255;
+    --listtransp_light_bottom: 255,255,255;
+
+    /* Settings/sidebar panels */
+    --sidebartransp_dark_top: 239,246,252;
+    --sidebartransp_dark_bottom: 255,255,255;
+    --sidebartransp_light_top: 239,246,252;
+    --sidebartransp_light_bottom: 255,255,255;
+
+    --angel-white: #ffffff;
+    --angel-porcelain: #f8fcff;
+    --angel-ice: #eaf4fc;
+    --angel-silver: #c5d5e2;
+    --angel-chrome: #91aabd;
+    --angel-blue: #6fadd5;
+    --angel-blue-deep: #397da9;
+    --angel-ink: #263b4b;
+    --angel-muted: #6d8495;
+}
+
+/* Force the entire interface into light, high-key territory. */
+.theme-dark,
+.theme-light {
+    color: var(--angel-ink) !important;
+    background: #ffffff !important;
+}
+
+.theme-dark *,
+.theme-light * {
+    scrollbar-color: #b8d1e2 #f7fbff;
+}
+
+/* Core panels */
+.theme-dark .tree_5dqHTG,
+.theme-dark .contentRegionScroller_jnk11m,
+.theme-dark .homeContainer_MG-lb3,
+.theme-dark .repoScroller_9JnAPs,
+.theme-dark .scrollerContainer_c6b11b,
+.theme-dark .container_c2efea,
+.theme-dark .chat_z_gUBg.backgroundI__7449f,
+.theme-dark .container_BkGrJJ,
+.theme-dark .content_L3EMza,
+.theme-dark .shop_Mqg79R,
+.theme-dark .homeWrapper_8iSxT3,
+.theme-dark .shopScroll__08415,
+.theme-dark .scroller_nNq2Vb,
+.theme-dark .containerSidenav_XtY2mm,
+.theme-dark .scroller_jkJlMe,
+.theme-dark .powerupsContainer_rhYbEd,
+.theme-dark .chatContent_z_gUBg,
+.theme-dark .peopleColumn_zrUwGA,
+.theme-dark .scroller__244e5,
+.theme-dark .scroller_pHGfKY,
+.theme-dark .pageBody_fTKmdS,
+.theme-dark .container_H5ozaj,
+.theme-dark .scroller_Bce46W,
+.theme-dark .sidebarRegionScroller_jnk11m,
+.theme-dark .repoHeader_2KfNvH,
+.theme-dark .header_tLZg6c,
+.theme-dark .titleContainer_7NrAL2,
+.theme-dark .container_86es0b,
+.theme-dark .membersWrap_86es0b,
+.theme-dark .nowPlayingColumn_zrUwGA {
+    background: linear-gradient(145deg, #ffffff 0%, #f7fbff 58%, #edf6fc 100%) !important;
+    color: var(--angel-ink) !important;
+}
+
+/* Make the original dark-mode surfaces white too. */
+.theme-dark .chat_z_gUBg,
+.theme-dark .sidebar_pog62O,
+.theme-dark .privateChannels_u88IQl,
+.theme-dark .contentRegion_jnk11m,
+.theme-dark .standardSidebarView_jnk11m,
+.theme-dark .tabBody_zrUwGA,
+.theme-dark .applicationStore_6U3jXZ,
+.theme-dark .container_xTP3zy {
+    background-color: #ffffff !important;
+    color: var(--angel-ink) !important;
+}
+
+/* Glassy white panels with fine chrome seams. */
+.theme-light .chatContent_z_gUBg,
+.theme-light .peopleColumn_zrUwGA,
+.theme-light .scroller__244e5,
+.theme-light .scroller_pHGfKY,
+.theme-light .pageBody_fTKmdS,
+.theme-light .container_H5ozaj,
+.theme-light .scroller_Bce46W,
+.theme-light .sidebarRegionScroller_jnk11m,
+.theme-light .container_86es0b,
+.theme-light .membersWrap_86es0b,
+.theme-light .nowPlayingColumn_zrUwGA {
+    background: linear-gradient(145deg, #ffffff 0%, #f8fcff 62%, #edf6fc 100%) !important;
+    color: var(--angel-ink) !important;
+}
+
+/* Typography: dark blue-grey against white, never grey-on-grey. */
+.theme-dark,
+.theme-light,
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-light h1,
+.theme-light h2,
+.theme-light h3,
+.theme-dark .title-3,
+.theme-light .title-3 {
+    color: var(--angel-ink) !important;
+}
+
+.theme-dark [class*="username"],
+.theme-light [class*="username"],
+.theme-dark [class*="header"],
+.theme-light [class*="header"],
+.theme-dark [class*="name"],
+.theme-light [class*="name"] {
+    text-shadow: 0 1px 0 rgba(255,255,255,.95);
+}
+
+/* Metallic blue selection, links, active states and focus. */
+.theme-dark a,
+.theme-light a,
+.theme-dark [class*="link"],
+.theme-light [class*="link"] {
+    color: var(--angel-blue-deep);
+}
+
+.theme-dark [class*="selected"],
+.theme-light [class*="selected"],
+.theme-dark [aria-selected="true"],
+.theme-light [aria-selected="true"] {
+    background: linear-gradient(180deg, #ffffff 0%, #e4f2fc 100%) !important;
+    box-shadow: inset 3px 0 0 #6fadd5, 0 1px 5px rgba(70,130,170,.12);
+    color: #245d82 !important;
+}
+
+.theme-dark button,
+.theme-light button,
+.theme-dark [role="button"],
+.theme-light [role="button"] {
+    border-color: #b8ccda;
+}
+
+.theme-dark button:hover,
+.theme-light button:hover,
+.theme-dark [role="button"]:hover,
+.theme-light [role="button"]:hover {
+    background: linear-gradient(180deg, #ffffff 0%, #eaf5fc 100%) !important;
+    box-shadow: inset 0 1px 0 #ffffff, 0 2px 8px rgba(76,137,177,.18);
+}
+
+/* Bright chrome borders and bevels. */
+.theme-dark .container_86es0b,
+.theme-light .container_86es0b,
+.theme-dark .membersWrap_86es0b,
+.theme-light .membersWrap_86es0b,
+.theme-dark .nowPlayingColumn_zrUwGA,
+.theme-light .nowPlayingColumn_zrUwGA,
+.theme-dark .container_H5ozaj,
+.theme-light .container_H5ozaj {
+    border-color: #b7ccdc !important;
+}
+
+.theme-dark input,
+.theme-light input,
+.theme-dark textarea,
+.theme-light textarea,
+.theme-dark [class*="input"],
+.theme-light [class*="input"] {
+    background: #ffffff !important;
+    color: #263b4b !important;
+    border: 1px solid #b8ccda !important;
+    box-shadow: inset 0 1px 3px rgba(80,120,150,.08), 0 1px 0 #ffffff;
+}
+
+.theme-dark input:focus,
+.theme-light input:focus,
+.theme-dark textarea:focus,
+.theme-light textarea:focus {
+    border-color: #6fadd5 !important;
+    box-shadow: 0 0 0 2px rgba(111,173,213,.2) !important;
+}
+
+/* Message hover: a pale icy-blue wash. */
+.theme-dark [class*="message"]:hover,
+.theme-light [class*="message"]:hover {
+    background-color: rgba(220,240,252,.38);
+}
+
+/* Scrollbars: polished silver-blue. */
+.theme-dark ::-webkit-scrollbar-thumb,
+.theme-light ::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #d9e7f0, #8eafc5, #d9e7f0) !important;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+
+/* Dividers and separators */
+.theme-dark [class*="divider"],
+.theme-light [class*="divider"],
+.theme-dark [class*="separator"],
+.theme-light [class*="separator"] {
+    border-color: #d1e0ea !important;
+}
+
+/* Keep Discord's status colours, but give the UI a cool metallic accent. */
+.theme-dark [class*="mention"],
+.theme-light [class*="mention"] {
+    background: rgba(111,173,213,.18) !important;
+    color: #286b98 !important;
+}

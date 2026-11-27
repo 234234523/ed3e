@@ -1,0 +1,190 @@
+/**
+ * @name AeroCord x SkeuoCord (Harsh White)
+ * @author Marda33, Repojun, Combined
+ * @version 1.0.0
+ * @description Harsh white Aero glass theme with 3D glossy buttons.
+ */
+
+@import url("https://raw.githubusercontent.com/234234523/ed3e/refs/heads/main/testbgi.css");
+
+:root {
+	/*---Theme Settings---*/
+	--bg-image: url('https://raw.githubusercontent.com/234234523/ed3e/refs/heads/main/933e50164931e4111b45cfabc28a00d9.jpg') center/cover no-repeat;
+
+	/*Avatar Border Radiuses*/
+	--maskradius: 2px;
+	--avatarradius: 3px;
+	--smallavatarradius: 2px;
+	--medavatarradius: 4px;
+	--largeavatarradius: 5px;
+
+	/* Borders - Tuned to light blue/white */
+	--smallborder_dark: 2px solid rgba(180,220,255);
+	--smallborder_light: 2px solid rgba(100,170,230);
+	--chatborder_dark: 0 0 0 2px rgba(230,245,255,0.6), 0 0 4px 4px rgba(0,0,0,0.2);
+	--chatborder_light: 0 0 0 2px rgba(150,200,240,0.8), 0 0 4px 4px rgba(100,150,200,0.2);
+
+	/* UI Gradients - Stark White & Light Blue */
+	--header_dark_top: rgb(220,240,255);
+	--header_dark_bottom: rgb(180,215,245);
+	--header_light_top: rgb(255,255,255);
+	--header_light_bottom: rgb(230,245,255);
+
+	--toolbar_dark_top: rgb(230,245,255);
+	--toolbar_dark_bottom: rgb(190,225,255);
+	--toolbar_light_top: rgb(255,255,255);
+	--toolbar_light_bottom: rgb(220,240,255);
+
+	/* Backgrounds */
+	--mainbg_light_top: hsl(200, calc(var(--saturation-factor, 1) * 100%), 98%);
+	--mainbg_light_bottom: hsl(205, calc(var(--saturation-factor, 1) * 100%), 92%);
+	--listbg_light_top: hsl(200, calc(var(--saturation-factor, 1) * 100%), 95%);
+	--listbg_light_bottom: hsl(205, calc(var(--saturation-factor, 1) * 100%), 88%);
+	--sidebar_light_top: hsl(200, calc(var(--saturation-factor, 1) * 100%), 96%);
+	--sidebar_light_bottom: hsl(205, calc(var(--saturation-factor, 1) * 100%), 90%);
+
+	/* Custom BG Transparencies (Mostly white) */
+	--maintransp_light_top: 255,255,255;
+	--maintransp_light_bottom: 235,248,255;
+	--chattransp_light_top: 255,255,255;
+	--chattransp_light_bottom: 240,250,255;
+	--listtransp_light_top: 245,252,255;
+	--listtransp_light_bottom: 230,245,255;
+}
+
+/* Harsh White/Blue Brand Colors */
+* {
+	--brand-100: #ffffff !important;
+	--brand-200: #f0f8ff !important;
+	--brand-300: #d4eeff !important;
+	--brand-360: #b3e0ff !important;
+	--brand-400: #80cfff !important;
+	--brand-500: #4db8ff !important;
+	--brand-600: #0099ff !important;
+	--control-brand-foreground: #0099ff !important;
+}
+
+/* ========================================== */
+/* STRUCTURAL OVERRIDES (From AeroCord)       */
+/* ========================================== */
+
+/* Main container */
+.appMount__51fd7, .bar_c38106, .systemBar_c38106, .fixed_c38106,
+.appAsidePanelWrapper_a3002d, .notAppAsidePanel_a3002d, .app_a3002d, .app__160d8, .bg__960e4 {
+  background-size: 100% 100% !important;
+  background-image: var(--bg-image) !important;
+}
+
+/* Transparent sections to show the background */
+.guilds__5e434, .chat_f75fb0, .themed__9293f, .chatContent_f75fb0,
+.container_c8ffbb, .members_c8ffbb, .clickable__91a9d, .sidebarList__5e434,
+.container__2637a, .content_e9e3ed, .contentHeader_e9e3ed, .container__133bf,
+.tabBody__133bf, .searchBar_e6b769, .scroller__99e7c, .privateChannels_e6b769 {
+  background-color: transparent !important;
+  background: none !important;
+}
+
+/* Fix black bar */
+.children__9293f::after, .chatGradient__36d07, .chatGradientBase__36d07 {
+  display: none !important;
+}
+
+/* Hover animations */
+.blobContainer_e5445c:hover, .wrapper_cc5dd2:hover, .avatar_c19a55:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(100, 200, 255, 0.4);
+  transition: 0.2s;
+}
+.avatar_c19a55 {
+  border-radius: 0px;
+  transition: 0.2s;
+}
+
+/* User Panel Background */
+.panels__5e434 {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Menus & Modals Blur */
+.wrapper_f7ecac, .menu_c1e9c4, .flexible_c1e9c4, .channelTextArea__74017, .themedBackground__74017 {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+/* ========================================== */
+/* GLOSSY HARSH WHITE 3D BUTTONS              */
+/* ========================================== */
+
+/* User panel buttons (Mic, Headphones, Settings) */
+.micButtonParent__37e49, .button__67645,
+[class*="actionButtons_"] button,
+[class*="actionButtons_"] [role="button"] {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: relative !important;
+  border-radius: 8px !important;
+  color: #004c99 !important; /* Dark blue icons */
+  text-align: center !important;
+  transition: 0.2s !important;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.8) !important; /* White glow */
+
+  /* Base white background */
+  background-color: #f8fbff !important;
+  border: 1px solid #a3d9ff !important;
+
+  /* Glossy gradients */
+  background-image:
+    radial-gradient(75% 50% at 50% 0%, #ffffff, transparent),
+    radial-gradient(75% 35% at 50% 85%, #d4eeff, transparent) !important;
+
+  /* 3D depth shadows */
+  box-shadow:
+    inset 0 -2px 4px 1px rgba(163, 217, 255, 0.4),
+    inset 0 -4px 4px 1px #ffffff,
+    inset 0 0 2px 1px rgba(255, 255, 255, 0.2),
+    0 1px 4px 1px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Hover animations for buttons */
+.micButtonParent__37e49:hover, .button__67645:hover,
+[class*="actionButtons_"] button:hover {
+  transition: 0.2s !important;
+  transform: translateY(-3px) !important;
+  box-shadow:
+    inset 0 -2px 4px 1px rgba(163, 217, 255, 0.6),
+    inset 0 -4px 4px 1px #ffffff,
+    0 4px 8px 1px rgba(0, 150, 255, 0.2) !important;
+}
+
+/* Top right toolbar buttons (Pinned messages, Threads, Members) */
+.iconWrapper__9293f {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: relative !important;
+  border-radius: 100px !important;
+  padding: 8px !important;
+  color: #004c99 !important;
+  transition: 0.2s !important;
+  background-color: #f8fbff !important;
+  border: 1px solid #a3d9ff !important;
+  background-image:
+    radial-gradient(75% 50% at 50% 0%, #ffffff, transparent),
+    radial-gradient(75% 35% at 50% 85%, #d4eeff, transparent) !important;
+  box-shadow:
+    inset 0 -2px 4px 1px rgba(163, 217, 255, 0.4),
+    inset 0 -4px 4px 1px #ffffff,
+    0 1px 4px 1px rgba(0, 0, 0, 0.1) !important;
+}
+
+.iconWrapper__9293f:hover {
+  transform: translateY(-2px) !important;
+  box-shadow:
+    inset 0 -2px 4px 1px rgba(163, 217, 255, 0.6),
+    inset 0 -4px 4px 1px #ffffff,
+    0 4px 8px 1px rgba(0, 150, 255, 0.2) !important;
+}

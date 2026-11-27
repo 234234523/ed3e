@@ -1,0 +1,89 @@
+/**
+ * @name AeroCord x SkeuoCord (Harsh White)
+ * @author Marda33, Repojun, Combined
+ * @version 1.0.0
+ * @description Harsh white Aero glass theme with 3D glossy buttons.
+ */
+
+@import url("https://raw.githubusercontent.com/234234523/ed3e/refs/heads/main/SkeuoCordBase.css");
+
+:root {
+    --bg-image: url('https://raw.githubusercontent.com/234234523/ed3e/refs/heads/main/933e50164931e4111b45cfabc28a00d9.jpg') center/cover no-repeat fixed;
+
+    --maskradius: 2px;
+    --avatarradius: 3px;
+    --smallavatarradius: 2px;
+    --medavatarradius: 4px;
+    --largeavatarradius: 5px;
+
+    --smallborder_dark: 2px solid rgb(180, 220, 255);
+    --smallborder_light: 2px solid rgb(100, 170, 230);
+    --chatborder_dark: 0 0 0 2px rgba(230, 245, 255, 0.6), 0 0 4px 4px rgba(0, 0, 0, 0.2);
+    --chatborder_light: 0 0 0 2px rgba(150, 200, 240, 0.8), 0 0 4px 4px rgba(100, 150, 200, 0.2);
+
+    /* How much the panels cover the wallpaper. Lower = more photo. */
+    --glass: 0.22;
+}
+
+/* Wallpaper sits behind everything and stays put while you scroll. */
+.theme-dark .layer__960e4,
+.theme-light .layer__960e4,
+.bg__960e4,
+.app_a01fb1 {
+    background: var(--bg-image) !important;
+    background-color: transparent !important;
+}
+
+/* Strip the solid fills SkeuoCord paints over the app. */
+.container_c48ade,
+.wrapper_ef3116,
+.scroller_ff90b2,
+.contentRegionScroller__23e6b,
+.scroller_a39aa3,
+.scroller_ef3116,
+.privateChannels__35e86,
+.contentRegion__23e6b,
+.sidebar_c48ade,
+.chat_f75fb0,
+.container__133bf,
+.standardSidebarView__23e6b,
+.membersWrap_c8ffbb,
+.container__0b563,
+.tabBody__133bf,
+.applicationStore_f07d62,
+.scroller_c880e8,
+.base_c48ade,
+.content_c48ade {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Thin white-blue glass so the photo stays readable everywhere. */
+.tree_ef3116,
+.contentRegionScroller__23e6b,
+.homeContainer__7449f,
+.scrollerContainer_c6b11b,
+.container_c2efea,
+.chat_f75fb0.background__7449f,
+.container_f369db,
+.content__49668,
+.shop__6db1d,
+.homeWrapper__0920e,
+.chatContent_f75fb0,
+.peopleColumn__133bf,
+.scroller__244e5,
+.scroller__5d7c9,
+.pageBody__41ed7,
+.container__2637a,
+.container__33507,
+.scroller__99e7c,
+.sidebarRegionScroller__23e6b,
+.sidebarRegion__23e6b,
+.container_c8ffbb,
+.membersWrap_c8ffbb,
+.nowPlayingColumn__133bf,
+.messagesWrapper__36d07,
+.scroller__36d07 {
+    background: rgba(232, 244, 255, var(--glass)) !important;
+    background-color: rgba(232, 244, 255, var(--glass)) !important;
+}

@@ -1,0 +1,65 @@
+/**
+ * @name AeroCord x SkeuoCord (Harsh White)
+ * @author Marda33, Repojun, Combined
+ * @version 1.0.0
+ * @description Harsh white Aero glass theme with 3D glossy buttons.
+ */
+
+@import url("https://raw.githubusercontent.com/234234523/ed3e/refs/heads/main/SkeuoCordBase.css");
+
+:root {
+    /*---Theme Settings---*/
+    --bg-image: url('https://raw.githubusercontent.com/234234523/ed3e/refs/heads/main/933e50164931e4111b45cfabc28a00d9.jpg') center/cover no-repeat;
+
+    /*Avatar Border Radiuses*/
+    --maskradius: 2px;
+    --avatarradius: 3px;
+    --smallavatarradius: 2px;
+    --medavatarradius: 4px;
+    --largeavatarradius: 5px;
+
+    /* Borders - Tuned to light blue/white */
+    --smallborder_dark: 2px solid rgba(180,220,255);
+    --smallborder_light: 2px solid rgba(100,170,230);
+    --chatborder_dark: 0 0 0 2px rgba(230,245,255,0.6), 0 0 4px 4px rgba(0,0,0,0.2);
+    --chatborder_light: 0 0 0 2px rgba(150,200,240,0.8), 0 0 4px 4px rgba(100,150,200,0.2);
+
+    /* UI Gradients - Stark White & Light Blue */
+    --header_dark_top: rgb(220,240,255);
+    --header_dark_bottom: rgb(180,215,245);
+    --header_light_top: rgb(255,255,255);
+    --header_light_bottom: rgb(230,245,255);
+
+    --toolbar_dark_top: rgb(230,245,255);
+    --toolbar_dark_bottom: rgb(190,225,255);
+    --toolbar_light_top: rgb(255,255,255);
+    --toolbar_light_bottom: rgb(220,240,255);
+
+    /* Backgrounds */
+    --mainbg_light_top: hsl(200, calc(var(--saturation-factor, 1) * 100%), 98%);
+    --mainbg_light_bottom: hsl(205, calc(var(--saturation-factor, 1) * 100%), 92%);
+    --listbg_light_top: hsl(200, calc(var(--saturation-factor, 1) * 100%), 95%);
+    --listbg_light_bottom: hsl(205, calc(var(--saturation-factor, 1) * 100%), 88%);
+    --sidebar_light_top: hsl(200, calc(var(--saturation-factor, 1) * 100%), 96%);
+    --sidebar_light_bottom: hsl(205, calc(var(--saturation-factor, 1) * 100%), 90%);
+
+    /* Custom BG Transparencies (Mostly white) */
+    --maintransp_light_top: 255,255,255;
+    --maintransp_light_bottom: 235,248,255;
+    --chattransp_light_top: 255,255,255;
+    --chattransp_light_bottom: 240,250,255;
+    --listtransp_light_top: 245,252,255;
+    --listtransp_light_bottom: 230,245,255;
+}
+
+/* Harsh White/Blue Brand Colors */
+* {
+    --brand-100: #ffffff !important;
+    --brand-200: #f0f8ff !important;
+    --brand-300: #d4eeff !important;
+    --brand-360: #b3e0ff !important;
+    --brand-400: #80cfff !important;
+    --brand-500: #4db8ff !important;
+    --brand-600: #0099ff !important;
+    --control-brand-foreground: #0099ff !important;
+}
